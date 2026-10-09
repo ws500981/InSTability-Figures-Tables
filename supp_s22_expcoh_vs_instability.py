@@ -19,7 +19,7 @@ tableau_20 = plt.cm.tab20.colors
 #bayesspace_clusterwise_entropy
 
 # instability data
-df = pd.read_csv("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
+df = pd.read_csv("./data/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
 
 metric = 'expression coherence'
 
@@ -223,7 +223,7 @@ for axi, ax in enumerate(axes_flat):
 plt.tight_layout()
 fig.subplots_adjust(bottom=0.15)
 
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s22_expcoh_vs_instability/s22_cluster_expcoh_vs_instability.pdf', dpi=600)
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s22_expcoh_vs_instability/s22_cluster_expcoh_vs_instability.png', dpi=600)
+plt.savefig('./data/supp/s22_expcoh_vs_instability/s22_cluster_expcoh_vs_instability.pdf', dpi=600)
+plt.savefig('./data/supp/s22_expcoh_vs_instability/s22_cluster_expcoh_vs_instability.png', dpi=600)
 
 
