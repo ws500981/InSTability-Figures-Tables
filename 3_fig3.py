@@ -24,8 +24,8 @@ from matplotlib.lines import Line2D
 plt.rcParams['font.family'] = 'Arial'
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42
-DATA_DIR = './ST_datasets/AAA_with_uncert'
-FIG_DIR = './fig3'
+DATA_DIR = './data/ST_datasets/AAA_with_uncert'
+FIG_DIR = './data/fig3'
 METRICS_CSV = os.path.join(FIG_DIR, 'all_sample_method_metrics_by_number_of_runs.csv')
 OUT_STEM = os.path.join(FIG_DIR, 'figure_3')
 DPI = 300
