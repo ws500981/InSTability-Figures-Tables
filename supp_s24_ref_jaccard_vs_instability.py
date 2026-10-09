@@ -12,7 +12,7 @@ plt.rcParams['ps.fonttype'] = 42
 tableau_20 = plt.cm.tab20.colors
 
 # instability data
-df = pd.read_csv("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
+df = pd.read_csv("./data/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
 
 metric = 'clusterwise jaccard'
 
@@ -270,7 +270,7 @@ fig.subplots_adjust(
     bottom=0.15
 )
 
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s24_ref_jaccard_vs_instability/s24_cluster_jaccard_wrt_ref_vs_instability.pdf', dpi=600)
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s24_ref_jaccard_vs_instability/s24_cluster_jaccard_wrt_ref_vs_instability.png', dpi=600)
+plt.savefig('./data/supp/s24_ref_jaccard_vs_instability/s24_cluster_jaccard_wrt_ref_vs_instability.pdf', dpi=600)
+plt.savefig('./data/supp/s24_ref_jaccard_vs_instability/s24_cluster_jaccard_wrt_ref_vs_instability.png', dpi=600)
 
 
