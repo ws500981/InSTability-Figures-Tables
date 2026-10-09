@@ -8,8 +8,8 @@ from matplotlib.collections import PolyCollection
 from matplotlib.patches import Rectangle
 from scipy.spatial import cKDTree
 from scipy.optimize import linear_sum_assignment
-DATA_PATH = Path('./ST_datasets/AAA_with_uncert')
-OUT_DIR = Path('./fig2')
+DATA_PATH = Path('./data/ST_datasets/AAA_with_uncert')
+OUT_DIR = Path('./data/fig2')
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 METHODS = [('leiden', 'Leiden'), ('louvain', 'Louvain'), ('bayesspace', 'BayesSpace'), ('graphst', 'GraphST'), ('stagate', 'STAGATE'), ('spicemix', 'SpiceMix'), ('sedr', 'SEDR'), ('sedr_mclust', 'SEDR (mclust)')]
 DATASETS = ['dlpfc', 'mouse_brain', 'mouse_brain_cerebellum', 'human_breast_cancer', 'Visium_HD_Human_Colon_Cancer_cropped_square', 'ov_ffpe', 'coad_ffpe', 'Visium_HD_Human_Colon_Cancer', 'coad_ffpe_full', 'ov_ffpe_full']
