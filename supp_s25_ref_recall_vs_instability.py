@@ -12,7 +12,7 @@ plt.rcParams['ps.fonttype'] = 42
 tableau_20 = plt.cm.tab20.colors
 
 # instability data
-df = pd.read_csv("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
+df = pd.read_csv("./data/fig5/clusterwise_metrics_by_number_of_runs_new.csv")
 
 metric = 'clusterwise recall'
 
@@ -190,5 +190,5 @@ for axi, ax in enumerate(axes_flat):
 plt.tight_layout()
 fig.subplots_adjust(bottom=0.15)
 
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s25_ref_recall_vs_instability/s25_cluster_recall_wrt_ref_vs_instability.pdf', dpi=600)
-plt.savefig('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s25_ref_recall_vs_instability/s25_cluster_recall_wrt_ref_vs_instability.png', dpi=600)
+plt.savefig('./data/supp/s25_ref_recall_vs_instability/s25_cluster_recall_wrt_ref_vs_instability.pdf', dpi=600)
+plt.savefig('./data/supp/s25_ref_recall_vs_instability/s25_cluster_recall_wrt_ref_vs_instability.png', dpi=600)
