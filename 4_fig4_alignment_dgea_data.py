@@ -38,8 +38,8 @@ from scipy.stats import spearmanr
 # -----------------------------------------------------------------------------
 # Configuration
 # -----------------------------------------------------------------------------
-INPUT_H5AD_DIR = "/home/wuw15/data_dir/ST_datasets/AAA_with_uncert"
-OUT_DIR = ("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig4/")
+INPUT_H5AD_DIR = "./data/ST_datasets/AAA_with_uncert"
+OUT_DIR = ("./data/fig4/")
 
 DATASETS = [
     "dlpfc",
