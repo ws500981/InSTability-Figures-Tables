@@ -77,7 +77,7 @@ SOFTLABEL_ROOT = Path(
     "./data/clustering_results"
 )
 OUT_DIR = Path(
-    ".data/supp/s18_entropy"
+    "./data/supp/s18_entropy"
 )
 
 DATASETS = [
