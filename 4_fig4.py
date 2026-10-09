@@ -162,15 +162,15 @@ def dataset_tag(dataset, sample):
     return f'{dataset}_{sample}'
 
 def get_paths(dataset, sample, method):
-    """
-    Paths retained from the existing Figure 4A script.
-    """
-    prefix = f'_{sample}_' if sample is not None else ''
-    adata_path = DATA_ROOT / f'{dataset}{prefix}.h5ad'
+    sample_suffix = f'_{sample}' if sample is not None else ''
+    sample_prefix = f'{sample}_' if sample is not None else ''
+
+    adata_path = DATA_ROOT / f'{dataset}{sample_suffix}.h5ad'
     result_dir = RESULT_ROOT / dataset / method
     suffix = 'csv' if method == 'bayesspace' else 'pkl'
-    result_path = result_dir / f'{prefix}{method}_results_50iterations.{suffix}'
-    return (adata_path, result_path)
+    result_path = result_dir / f'{sample_prefix}{method}_results_50iterations.{suffix}'
+
+    return adata_path, result_path
 
 def uncertainty_h5ad_path(dataset, sample):
     """
