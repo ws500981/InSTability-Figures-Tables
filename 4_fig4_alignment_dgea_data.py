@@ -39,7 +39,7 @@ from scipy.stats import spearmanr
 # Configuration
 # -----------------------------------------------------------------------------
 INPUT_H5AD_DIR = "./data/ST_datasets/AAA_with_uncert"
-OUT_DIR = ("./data/fig4/")
+OUT_DIR = ("./data/fig4/alignemnt_dgea_data")
 
 DATASETS = [
     "dlpfc",
