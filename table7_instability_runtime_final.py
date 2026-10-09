@@ -49,17 +49,15 @@ warnings.filterwarnings("ignore")
 # -----------------------------------------------------------------------------
 
 INPUT_RESULTS_ROOT = Path(
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/outs"
+    "./data/clustering_results"
 )
 
 BASE = Path(
-    "/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/"
-    "outs_new_diff_r_faster_standalonek_sampling"
+    "./data"
 )
 
 # Keep all timing/table outputs separate from the existing instability outputs.
-OUT_DIR = BASE / "zzz-all_plots/supp/t7"
+OUT_DIR = BASE / "supp/t7"
 
 RAW_RUNTIME_CSV = OUT_DIR / "table7_runtime_raw_50runs_correct_node.csv"
 OUT_CSV = OUT_DIR / "table7_instability_runtime_50runs.csv"
