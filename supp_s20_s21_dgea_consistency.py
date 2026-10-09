@@ -11,8 +11,8 @@ import sys
 plt.rcParams['font.family'] = 'Arial'
 
 
-DGEA_DIR = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig4/alignment_dgea_data')
-OUTPUT_DIR = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s20_s21_dgea_consistency')
+DGEA_DIR = Path('./data/fig4/alignment_dgea_data')
+OUTPUT_DIR = Path('./data/supp/s20_s21_dgea_consistency')
 
 METHODS = [
     "leiden",
