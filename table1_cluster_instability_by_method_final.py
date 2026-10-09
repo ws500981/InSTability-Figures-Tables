@@ -12,10 +12,10 @@ import numpy as np
 import pandas as pd
 from scipy.stats import pearsonr
 
-BASE = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling")
+BASE = Path("./data")
 INSTABILITY_ROOT = BASE / "1-nested-non-sampling"
-CLUSTER_CSV = BASE / "zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv"
-OUT_DIR = BASE / "zzz-all_plots/supp/t1"
+CLUSTER_CSV = BASE / "fig5/clusterwise_metrics_by_number_of_runs_new.csv"
+OUT_DIR = BASE / "supp/t1"
 OUT_CSV = OUT_DIR / "table1_cluster_instability_by_method.csv"
 OUT_TEX = OUT_DIR / "table1_cluster_instability_by_method.tex"
 
