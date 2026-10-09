@@ -8,10 +8,10 @@ import numpy as np
 sampled = True
 
 if sampled:
-    ROOT = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/2-sampled")
+    ROOT = Path("./data/2-sampled")
 else:
     # first k runs
-    ROOT = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/1-nested-non-sampling")
+    ROOT = Path("./data/1-nested-non-sampling")
 
 UNCERTAINTY_KEY = (
     "spot_uncertainty_repeats"
@@ -274,5 +274,5 @@ fig.supylabel(
 
 fig.tight_layout()
 
-plt.savefig(f"/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s27_diff_r_convergence/s27_continuous_score_convergence{'_sampled' if sampled else ''}.png", dpi=600, bbox_inches="tight")
-plt.savefig(f"/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/supp/s27_diff_r_convergence/s27_continuous_score_convergence{'_sampled' if sampled else ''}.pdf", dpi=600, bbox_inches="tight")
+plt.savefig(f"./data/supp/s27_diff_r_convergence/s27_continuous_score_convergence{'_sampled' if sampled else ''}.png", dpi=600, bbox_inches="tight")
+plt.savefig(f"./data/supp/s27_diff_r_convergence/s27_continuous_score_convergence{'_sampled' if sampled else ''}.pdf", dpi=600, bbox_inches="tight")
