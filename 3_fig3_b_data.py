@@ -18,13 +18,13 @@ from sklearn.metrics import adjusted_rand_score
 # Configuration
 # ---------------------------------------------------------------------
 
-H5AD_DIR = Path("/home/wuw15/data_dir/ST_datasets/AAA_with_uncert")
+H5AD_DIR = Path("./data/ST_datasets/AAA_with_uncert")
 
-RESULTS_ROOT = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs")
+RESULTS_ROOT = Path("./data/clustering_results")
 
-INSTABILITY_ROOT = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/1-nested-non-sampling")
+INSTABILITY_ROOT = Path("./data/1-nested-non-sampling")
 
-OUT_DIR = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig3")
+OUT_DIR = Path("./data/fig3")
 
 CSV_OUT = OUT_DIR / "all_sample_method_metrics_by_number_of_runs.csv"
 
