@@ -72,15 +72,12 @@ INSTABILITY_AXIS_COLOR = "#e6550d"
 # Data and output settings
 # -----------------------------------------------------------------------------
 
-DATA_DIR = Path("/home/wuw15/data_dir/ST_datasets/AAA_with_uncert")
+DATA_DIR = Path("./data/ST_datasets/AAA_with_uncert")
 SOFTLABEL_ROOT = Path(
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/outs"
+    "./data/clustering_results"
 )
 OUT_DIR = Path(
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/"
-    "zzz-all_plots/supp/s18_entropy"
+    ".data/supp/s18_entropy"
 )
 
 DATASETS = [
