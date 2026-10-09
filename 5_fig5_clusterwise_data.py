@@ -17,24 +17,19 @@ from sklearn.decomposition import PCA
 # ---------------------------------------------------------------------
 
 DATA_DIR = Path(
-    "/home/wuw15/data_dir/ST_datasets/AAA_with_uncert"
+    "./data/ST_datasets/AAA_with_uncert"
 )
 
 RESULTS_ROOT = Path(
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/outs"
+    "./data/clustering_results"
 )
 
 INSTABILITY_ROOT = Path(
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/"
-    "outs_new_diff_r_faster_standalonek_sampling/"
-    "1-nested-non-sampling"
+    "./data/1-nested-non-sampling"
 )
 
 OUT_CSV = Path(
-    "/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig5/"
-    "clusterwise_metrics_by_number_of_runs_new.csv"
+    "./data/fig5/clusterwise_metrics_by_number_of_runs_new.csv"
 )
 
 RUN_COUNTS = list(range(5, 51, 5))
@@ -62,7 +57,6 @@ DATASETS = [
     "Visium_HD_Human_Colon_Cancer",
     "coad_ffpe_full",
     "ov_ffpe_full",
-    "SCAF4093_3229997_A1",
 ]
 
 DLPFC_SAMPLES = [
