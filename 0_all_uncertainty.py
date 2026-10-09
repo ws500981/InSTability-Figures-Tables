@@ -19,8 +19,7 @@ from joblib import Parallel, delayed
 # ---------------------------------------------------------------------
 
 INPUT_RESULTS_ROOT = (
-    "/home/wuw15/data_dir/my_analysis_python/"
-    "uncertainty_public_data/outs"
+    "./data/clustering_results"
 )
 
 
@@ -42,7 +41,7 @@ RUN_COUNTS = list(range(5, MAX_ITERATIONS + 1, 5))
 #     same permutation.
 RUN_SELECTION_MODE = "sampled"  # "nested" or "sampled"
 
-OUTPUT_ROOT = (f"/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/{'2-sampled' if RUN_SELECTION_MODE == 'sampled' else '1-nested-non-sampling'}")
+OUTPUT_ROOT = (f"./data/{'2-sampled' if RUN_SELECTION_MODE == 'sampled' else '1-nested-non-sampling'}")
 
 # Number of random run-order replicates in sampled mode.
 N_SAMPLING_REPEATS = 25
@@ -896,7 +895,6 @@ if __name__ == "__main__":
         "Visium_HD_Human_Colon_Cancer",
         "coad_ffpe_full",
         "ov_ffpe_full",
-        "SCAF4093_3229997_A1",
     ]
 
     dlpfc_sample_names = [
