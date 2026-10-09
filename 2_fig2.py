@@ -8,13 +8,13 @@ from matplotlib.collections import PolyCollection
 from matplotlib.patches import Rectangle
 from scipy.spatial import cKDTree
 from scipy.optimize import linear_sum_assignment
-DATA_PATH = Path('/home/wuw15/data_dir/ST_datasets/AAA_with_uncert')
-OUT_DIR = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig2')
+DATA_PATH = Path('./ST_datasets/AAA_with_uncert')
+OUT_DIR = Path('./fig2')
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 METHODS = [('leiden', 'Leiden'), ('louvain', 'Louvain'), ('bayesspace', 'BayesSpace'), ('graphst', 'GraphST'), ('stagate', 'STAGATE'), ('spicemix', 'SpiceMix'), ('sedr', 'SEDR'), ('sedr_mclust', 'SEDR (mclust)')]
-DATASETS = ['dlpfc', 'mouse_brain', 'mouse_brain_cerebellum', 'human_breast_cancer', 'Visium_HD_Human_Colon_Cancer_cropped_square', 'ov_ffpe', 'coad_ffpe', 'Visium_HD_Human_Colon_Cancer', 'coad_ffpe_full', 'ov_ffpe_full'] #, 'SCAF4093_3229997_A1']
+DATASETS = ['dlpfc', 'mouse_brain', 'mouse_brain_cerebellum', 'human_breast_cancer', 'Visium_HD_Human_Colon_Cancer_cropped_square', 'ov_ffpe', 'coad_ffpe', 'Visium_HD_Human_Colon_Cancer', 'coad_ffpe_full', 'ov_ffpe_full']
 DLPFC_SAMPLES = ['151507', '151508', '151509', '151510', '151669', '151670', '151671', '151672', '151673', '151674', '151675', '151676']
-DATASET_DISPLAY = {'dlpfc': 'DLPFC', 'mouse_brain': 'Mouse Brain', 'mouse_brain_cerebellum': 'Mouse Brain Cerebellum', 'human_breast_cancer': 'Human Breast Cancer', 'Visium_HD_Human_Colon_Cancer_cropped_square': 'CRC', 'Visium_HD_Human_Colon_Cancer': 'CRC (full sample)', 'coad_ffpe': 'COAD', 'ov_ffpe': 'OV', 'coad_ffpe_full': 'COAD (full sample)', 'ov_ffpe_full': 'OV (full sample)'} # , 'SCAF4093_3229997_A1': 'SCAF4093-3229997-A1'}
+DATASET_DISPLAY = {'dlpfc': 'DLPFC', 'mouse_brain': 'Mouse Brain', 'mouse_brain_cerebellum': 'Mouse Brain Cerebellum', 'human_breast_cancer': 'Human Breast Cancer', 'Visium_HD_Human_Colon_Cancer_cropped_square': 'CRC', 'Visium_HD_Human_Colon_Cancer': 'CRC (full sample)', 'coad_ffpe': 'COAD', 'ov_ffpe': 'OV', 'coad_ffpe_full': 'COAD (full sample)', 'ov_ffpe_full': 'OV (full sample)'}
 CLUSTER_COLORS = ['#3049ad', '#fe8011', '#1b7837', '#fa0000', '#ab43fc', '#8d574c', '#ff00d9', '#bcbd22', '#17becf', '#8baaf3', '#ffbb79', '#99df8b', '#fe7775', '#c6b1d4', '#c49d95', '#ff80c6', '#dcdb91', '#a7d1e6', '#393b79', '#8c6d31', '#0aac00', '#982109', '#7b4173', '#713230', '#ff008c', '#637939', '#e7cb94', '#ccefc5', '#efcece', '#f7b6d2', '#eeedc8']
 # Full 0.0-1.0 instability legend.
 BINS = [('[0.0,0.1)', 0.0, 0.1, '#08306b'), ('[0.1,0.2)', 0.1, 0.2, '#4292c6'), ('[0.2,0.3)', 0.2, 0.3, '#9ecae1'), ('[0.3,0.4)', 0.3, 0.4, '#deebf7'), ('[0.4,0.5)', 0.4, 0.5, '#fee391'), ('[0.5,0.6)', 0.5, 0.6, '#fec44f'), ('[0.6,0.7)', 0.6, 0.7, '#fdae6b'), ('[0.7,0.8)', 0.7, 0.8, '#fd8d3c'), ('[0.8,0.9)', 0.8, 0.9, '#fb6a4a'), ('[0.9,1.0]', 0.9, 1.0, '#cb181d')]
