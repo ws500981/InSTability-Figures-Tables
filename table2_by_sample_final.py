@@ -11,10 +11,10 @@ import joblib
 import numpy as np
 import pandas as pd
 
-BASE = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling")
+BASE = Path("./data")
 INSTABILITY_ROOT = BASE / "1-nested-non-sampling"
-CLUSTER_CSV = BASE / "zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv"
-OUT_DIR = BASE / "zzz-all_plots/supp/t2"
+CLUSTER_CSV = BASE / "fig5/clusterwise_metrics_by_number_of_runs_new.csv"
+OUT_DIR = BASE / "supp/t2"
 OUT_CSV = OUT_DIR / "table2_by_sample.csv"
 OUT_TEX = OUT_DIR / "table2_by_sample.tex"
 
