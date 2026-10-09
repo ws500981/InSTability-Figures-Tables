@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-# Run in the visiumhd3 environment.
-# Refactored for compactness; plotting/data semantics are intentionally preserved.
 
 from pathlib import Path
 import warnings
@@ -54,9 +52,9 @@ SHOW_PANEL_GUIDES = False
 # ============================================================================
 # INPUT / OUTPUT PATHS
 # ============================================================================
-DATA_ROOT = Path('/home/wuw15/data_dir/ST_datasets/AAA_with_uncert')
-RESULT_ROOT = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs')
-OUT_DIR = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig4')
+DATA_ROOT = Path('./data/ST_datasets/AAA_with_uncert')
+RESULT_ROOT = Path('./data/clustering_results')
+OUT_DIR = Path('./data/fig4')
 ALIGNMENT_DIR = OUT_DIR / 'alignment_dgea_data'
 OUT_STEM = OUT_DIR / 'figure4_dgea'
 FIG4_METHOD = 'sedr'
@@ -100,7 +98,7 @@ FIG4C_HEIGHT_RATIOS = [1.0, 0.18, 1.0, 0.42, 0.2]
 # ============================================================================
 # FIGURE 4D SETTINGS
 # ============================================================================
-FIG4D_METRICS_CSV = Path('/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig5/clusterwise_metrics_by_number_of_runs_new.csv')
+FIG4D_METRICS_CSV = Path('./data/fig5/clusterwise_metrics_by_number_of_runs_new.csv')
 FIG4D_METRICS = [('clusterwise jaccard', 'Jaccard'), ('clusterwise recall', 'Recall'), ('clusterwise purity (precision)', 'Purity')]
 FIG4D_XCOL = 'clusterwise mean instability'
 FIG4D_ITERATIONS = 50
