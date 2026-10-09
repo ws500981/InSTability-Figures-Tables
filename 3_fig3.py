@@ -24,8 +24,8 @@ from matplotlib.lines import Line2D
 plt.rcParams['font.family'] = 'Arial'
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42
-DATA_DIR = '/home/wuw15/data_dir/ST_datasets/AAA_with_uncert'
-FIG_DIR = '/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling/zzz-all_plots/fig3'
+DATA_DIR = './ST_datasets/AAA_with_uncert'
+FIG_DIR = './fig3'
 METRICS_CSV = os.path.join(FIG_DIR, 'all_sample_method_metrics_by_number_of_runs.csv')
 OUT_STEM = os.path.join(FIG_DIR, 'figure_3')
 DPI = 300
