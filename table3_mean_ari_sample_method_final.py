@@ -5,9 +5,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-BASE = Path("/home/wuw15/data_dir/my_analysis_python/uncertainty_public_data/outs_new_diff_r_faster_standalonek_sampling")
-METRICS_CSV = BASE / "zzz-all_plots/fig3/all_sample_method_metrics_by_number_of_runs.csv"
-OUT_DIR = BASE / "zzz-all_plots/supp/t3"
+BASE = Path("./data")
+METRICS_CSV = BASE / "fig3/all_sample_method_metrics_by_number_of_runs.csv"
+OUT_DIR = BASE / "supp/t3"
 OUT_CSV = OUT_DIR / "table3_mean_ari_sample_method.csv"
 SUMMARY_CSV = OUT_DIR / "table3_mean_ari_method_summary.csv"
 OUT_TEX = OUT_DIR / "table3_mean_ari_sample_method.tex"
